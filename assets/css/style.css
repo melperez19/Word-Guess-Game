@@ -1,0 +1,29 @@
+.container { 
+    text-align: center;
+    margin: 2%;
+    padding: 0%;
+}
+
+.lead {
+    font-family: 'Bree Serif', serif;
+    font-size: 3%;
+}
+
+.current-word {
+    letter-spacing: 6px;
+}
+
+.border {
+    border-style: dashed;
+}
+
+#start-game-img {
+    margin-block-end: 3%;
+    margin-block-start: 3%;
+    height: 90%;
+}
+
+.row {
+    height: 390px;
+}
+   

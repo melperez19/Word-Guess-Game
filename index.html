@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <title>Word Guess Game</title>
+</head>
+
+<body class="container bg-dark">
+    <img src="assets/images/90s-logo.jpg" width="50%" height="30%" />
+    <p class="lead text-center text-white">
+        <i class="fas fa-music"></i> 90's Style Hangman <i class="fas fa-music"> </i></p>
+    <div class="row rounded border border-white">
+        <section class="col-md-6 col-xs-12 gameplay-column">
+            <img id="start-game-img" src="assets/images/all90's.jpg" alt="Starting 90's Image" width="90%" height="50%" />
+        </section>
+        <aside class="col-6 col-xs-12 gameplay-column text-white text-center rounded border border-white">
+            <h1>Press any key to get started!</h1>
+            <p>Current Word</p>
+            <div id="current-word"></div>
+            <p>Letters Already Guessed</p>
+            <div id="letters-guessed"></div>
+            <p>Number of Guesses Remaining</p>
+            <div id="guesses-remaining"></div>
+            <div id="wins-losses">
+                <p>Wins</p>
+                <div id="wins"></div>
+                <p>Losses</p>
+                <div id="losses"></div>
+            </div>
+        </aside>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script>
+        resetGame();
+        updateDisplay();
+    </script>
+
+
+</body>
+
+</html>
